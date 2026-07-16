@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Яркий демонстрационный магазин Robux: выберите набор, узнайте о безопасности и попробуйте удобную корзину.">
+  <meta name="theme-color" content="#6c4cff">
+  <title>RbxUp — магазин игровой валюты Robux</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/cart.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="RbxUp — на главную"><span class="logo-cube">R</span><span>RBX<span class="logo-accent">UP</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Открыть меню</span><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a class="is-current" href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="#how">Как купить</a>
+        <a href="#guides">Гайды</a>
+      </nav>
+      <button class="cart-button" type="button" data-cart-open aria-label="Открыть корзину, товаров: 0">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 3h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 7H7M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+        <span class="cart-label">Корзина</span><span class="cart-count" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span>✦</span> Время для нового образа</span>
+          <h1>Пополняй запас <span>Robux</span> и играй ярче</h1>
+          <p>Выбери подходящий набор за пару кликов. Всё просто, понятно и пока работает в безопасном демо-режиме.</p>
+          <div class="hero-actions"><a class="button button-primary" href="catalog.html">Выбрать Robux <span aria-hidden="true">→</span></a><a class="text-link" href="#how">Как это работает</a></div>
+          <div class="hero-note"><span class="note-icon">✓</span><span><strong>Без паролей и данных карты</strong><small>Мы ничего секретного не запрашиваем</small></span></div>
+        </div>
+        <div class="hero-visual" aria-label="Два фантастических игровых героя у портала с монетами">
+          <img src="assets/hero-world.png" alt="Космический алхимик и конфетный рыцарь рядом с порталом и золотыми игровыми монетами" width="1800" height="1125">
+          <div class="float-chip chip-top" aria-hidden="true"><span class="coin-mini">R</span> +400</div>
+          <div class="float-chip chip-bottom" aria-hidden="true">⚡ Мгновенно</div>
+        </div>
+      </div>
+      <div class="pixel-trail" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="section benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="kicker">Почему с нами удобно</span><h2 id="benefits-title">Всё нужное. Ничего лишнего.</h2><p>Понятный путь от выбора набора до демо-заказа.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit-card reveal"><div class="icon-box purple">⚡</div><h3>Быстрый выбор</h3><p>Все наборы видны сразу. Сравни количество и цену.</p></article>
+          <article class="benefit-card reveal"><div class="icon-box cyan">🛡</div><h3>Безопасное демо</h3><p>Не просим пароль, карту или доступ к аккаунту.</p></article>
+          <article class="benefit-card reveal"><div class="icon-box yellow">🎮</div><h3>Удобно с телефона</h3><p>Крупные кнопки и простая корзина на любом экране.</p></article>
+          <article class="benefit-card reveal"><div class="icon-box pink">💬</div><h3>Всё честно</h3><p>Итоговая цена видна заранее, без таймеров и давления.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="kicker">Простой маршрут</span><h2 id="how-title">Как купить Robux</h2></div>
+        <ol class="steps">
+          <li class="step-card reveal"><span class="step-number">01</span><div class="step-emoji">🪙</div><h3>Выбери набор</h3><p>Открой каталог и найди подходящее количество Robux.</p></li>
+          <li class="step-card reveal"><span class="step-number">02</span><div class="step-emoji">🛒</div><h3>Проверь корзину</h3><p>Меняй количество или убирай лишнее — итог обновится сам.</p></li>
+          <li class="step-card reveal"><span class="step-number">03</span><div class="step-emoji">✨</div><h3>Запусти демо</h3><p>Нажми «Оформить заказ» и увидишь тестовое сообщение.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section guides" id="guides" aria-labelledby="guides-title">
+      <div class="container">
+        <div class="section-heading heading-row reveal"><div><span class="kicker">Прокачай игровой IQ</span><h2 id="guides-title">Полезные гайды</h2></div><p>Три коротких совета для уверенной и безопасной игры.</p></div>
+        <div class="guide-grid">
+          <article class="guide-card guide-featured reveal"><div class="guide-art art-coins" aria-hidden="true"><span>R</span><i></i><i></i></div><div class="guide-body"><span class="tag">Бюджет</span><h3>Как разумно тратить Robux</h3><p>Составь список желаний, сравни предметы и оставь часть запаса на потом.</p><button class="article-toggle" type="button" aria-expanded="false">Читать совет <span>→</span></button><div class="article-extra"><p>Перед покупкой спроси себя: буду ли я пользоваться этим предметом через неделю? Не спеши и обсуди крупную покупку со взрослым.</p></div></div></article>
+          <article class="guide-card reveal"><div class="guide-art art-shield" aria-hidden="true">🛡</div><div class="guide-body"><span class="tag tag-blue">Безопасность</span><h3>Защити аккаунт от мошенников</h3><p>Никому не сообщай пароль и включи двухэтапную проверку.</p><button class="article-toggle" type="button" aria-expanded="false">Читать совет <span>→</span></button><div class="article-extra"><p>Проверяй адрес сайта, не переходи по странным ссылкам и помни: честный продавец никогда не попросит пароль от аккаунта.</p></div></div></article>
+          <article class="guide-card reveal"><div class="guide-art art-items" aria-hidden="true">🎒</div><div class="guide-body"><span class="tag tag-pink">Инвентарь</span><h3>Выбери игровой предмет</h3><p>Смотри не только на редкость, но и на то, подходит ли вещь твоему стилю.</p><button class="article-toggle" type="button" aria-expanded="false">Читать совет <span>→</span></button><div class="article-extra"><p>Сохрани несколько вариантов, примерь их в редакторе аватара и выбери тот, который сочетается с вещами из твоего инвентаря.</p></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container"><div class="cta-panel reveal"><div class="cta-coins" aria-hidden="true"><span>R</span><span>R</span><span>R</span></div><div><span class="kicker light">Готов к новому уровню?</span><h2>Твой набор уже ждёт</h2><p>Загляни в каталог и собери демо-корзину.</p></div><a class="button button-light" href="catalog.html">Перейти в каталог <span aria-hidden="true">→</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div><a class="logo footer-logo" href="index.html"><span class="logo-cube">R</span><span>RBX<span class="logo-accent">UP</span></span></a><p>Яркий и понятный демо-магазин игровой валюты.</p></div><div><h2>Навигация</h2><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="#how">Как купить</a></div><div><h2>Важно</h2><p>Это независимый демонстрационный проект, не связанный с Roblox Corporation. Roblox и Robux являются товарными знаками их владельцев.</p></div></div>
+    <div class="container footer-bottom"><span>© <span data-year></span> RbxUp. Демо-проект.</span><span>Без настоящих платежей</span></div>
+  </footer>
+  <div data-cart-root></div>
+</body>
+</html>
