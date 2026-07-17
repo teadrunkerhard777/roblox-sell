@@ -23,9 +23,10 @@
   function renderProducts() {
     const grid = document.querySelector('[data-product-grid]');
     if (!grid) return;
-    grid.innerHTML = PRODUCTS.map((item) => `<article class="product-card tone-${item.tone} ${item.popular ? 'is-popular' : ''} ${item.best ? 'is-best' : ''}">
+    const arts = ['guide-items.png', 'guide-budget.png', 'guide-safety.png'];
+    grid.innerHTML = PRODUCTS.map((item, index) => `<article class="product-card tone-${item.tone} ${item.popular ? 'is-popular' : ''} ${item.best ? 'is-best' : ''}">
       ${item.badge ? `<span class="product-badge">${item.badge}</span>` : ''}
-      <div class="product-art" aria-hidden="true"><span class="product-coin">R</span><i class="spark s1">✦</i><i class="spark s2">✦</i><span class="cube-small"></span></div>
+      <div class="product-art"><img src="assets/${arts[index % arts.length]}" alt="Яркая игровая сцена для набора ${item.amount} Robux"><span class="product-art-shade" aria-hidden="true"></span><span class="product-coin" aria-hidden="true">R</span><i class="spark s1" aria-hidden="true">✦</i><i class="spark s2" aria-hidden="true">✦</i><span class="cube-small" aria-hidden="true"></span></div>
       <div class="product-info"><p class="product-amount"><strong>${item.amount.toLocaleString('ru-RU')}</strong> Robux</p><p class="product-desc">${item.desc}</p><div class="product-buy"><span class="product-price">${money(item.price)}</span><button class="add-button" type="button" data-add="${item.id}" aria-label="Добавить ${item.amount} Robux в корзину"><span>В корзину</span><b aria-hidden="true">+</b></button></div></div>
     </article>`).join('');
   }
